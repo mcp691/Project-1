@@ -36,16 +36,13 @@ html, body {
 nav ul {
   display: flex;
   justify-content: space-around;
-  padding: 10px;
   background-color: green;
 }
 
 nav ul li{
   display: inline-block;
-  padding: 20px;
+  padding: 20px 40px 20px 40px;
   background-color: #30C918;
-  border: solid 2px black;
-  border-radius: 15px;
 }
 
 nav ul li:hover {
