@@ -15,12 +15,12 @@
 
   <tbody>
     <% @products.each do |product| %>
-    <div class ="col-sm-2 col-ms-4">
+    <div class="col-sm-2 col-ms-4 products">
       <a href="#"><%= image_tag(product.image_url, class: "img-responsive") %></a>
       <a href="#"><h1><%= product.name %></h1></a>
       <p><%= product.description %></p>
       <p>Colour: <%= product.colour %></p>
-      <strong><p>Price: <%= product.price %></p></strong>
+      <strong><p class="price">Add to Cart: <%= product.price %></p></strong>
     </div>
 
       <tr>
