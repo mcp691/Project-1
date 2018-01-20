@@ -11,6 +11,10 @@ html, body {
   background-color: #FCF3E8;
 }
 
+a{
+  color: inherit;
+}
+
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
@@ -46,7 +50,7 @@ nav ul {
   background-color: #809B68;
 }
 
-nav ul li{
+nav ul li {
   display: inline-block;
   padding: 20px 40px 20px 40px;
   background-color: #BADDC2;
