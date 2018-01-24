@@ -2,8 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 *{
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 html, body {
@@ -39,7 +39,7 @@ a{
 
 nav {
   width: 100%;
-  top: 0;
+  top: 0px;
   position: fixed;
   z-index: 100;
 }
@@ -52,9 +52,10 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  padding: 20px 40px 20px 40px;
+  padding: 20px 40px 22px 40px;
   background-color: #BADDC2;
-  font-size: 2em;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 nav ul li:hover {
@@ -77,16 +78,36 @@ h1 {
   background-color: #BADDC2;
   margin: 1%;
   border: solid 2px black;
-  height: 400px;
-  max-height: 400px;
+  height: 370px;
+  max-height: 370px;
+}
+
+.img-responsive {
+  height: 150px;
+  width: 225px;
+  margin-top: 10%;
+  border: 1px black solid;
 }
 
 .price {
   border: solid 2px black;
+  width: 50%;
 }
 
 .price:hover {
   cursor: pointer;
   background-color: #F0F2BC;
   transition-duration: 0.4s;
+}
+
+.carousel-inner > .item > img {
+  width: 1550px;
+  height: 700px;
+}
+
+.carousel-caption {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  font-size: 3em;
 }
