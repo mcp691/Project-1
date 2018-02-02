@@ -1,9 +1,10 @@
 <div class="col-sm-2 col-ms-4 products">
-  <div class="prod_img"><%= link_to image_tag(product.image_url, class: "img-responsive"), product %></div>
-  <h3><%= link_to product.name, product  %></h3>
-  <p><%= product.description %></p>
-  <p>Colour: <%= product.colour %></p>
-  <strong><p class="price">Buy Now: <%= product.price %></p></strong>
-  <%= link_to 'Edit', edit_product_path(product) %>
-  <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+  <div class="prod_img"><%= link_to image_tag(product.image_url, class: "img-responsive"), product %>
+    <h3><%= link_to product.name, product  %></h3>
+    <p><%= product.description %></p>
+    <p>Colour: <%= product.colour %></p>
+    <strong><p class="price">Buy Now: <%= product.price %></p></strong>
+    <%= link_to 'Edit', edit_product_path(product) %>
+    <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+  </div>
 </div>
