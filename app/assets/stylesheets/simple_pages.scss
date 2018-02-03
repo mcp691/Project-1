@@ -1,9 +1,9 @@
-// Place all the styles related to the simple_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Acme');
+
 *{
   margin: 0px;
   padding: 0px;
+  font-family: 'Acme', sans-serif;
 }
 
 html, body {
@@ -13,6 +13,15 @@ html, body {
 
 a{
   color: inherit;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  font-size: 1.5em;
+}
+
+.mr-auto {
+  margin-left: auto;
 }
 
 .page-wrap {
@@ -37,36 +46,7 @@ a{
 }
 /*end of Sticky Footer*/
 
-nav {
-  width: 100%;
-  top: 0px;
-  position: fixed;
-  z-index: 100;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  background-color: #809B68;
-}
-
-nav ul li {
-  display: inline-block;
-  padding: 20px 40px 22px 40px;
-  background-color: #BADDC2;
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-nav ul li:hover {
-  cursor: pointer;
-  background-color: #F0F2BC;
-  transition-duration: 0.4s;
-
-}
-
 h1 {
-  font-family: sans-serif;
   font-size: 3em;
 }
 
@@ -82,7 +62,7 @@ h1 {
   max-height: 370px;
 }
 
-.img-responsive {
+.img-products {
   height: 150px;
   width: 225px;
   margin-top: 10%;
@@ -100,14 +80,7 @@ h1 {
   transition-duration: 0.4s;
 }
 
-.carousel-inner > .item > img {
-  width: 1550px;
-  height: 700px;
-}
-
-.carousel-caption {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5%;
+.carousel-inner {
+  width: auto;
   font-size: 3em;
 }
