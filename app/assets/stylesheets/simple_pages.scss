@@ -50,33 +50,30 @@ h1 {
   font-size: 3em;
 }
 
+.card {
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+}
+
+.btn-outline:hover {
+  background-color: #7f9b69;
+  color: white;
+}
+
+.card-title {
+  margin-top: 5%;
+}
+
+.card-link {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  font-size: 1.5em;
+}
+
 .my-image {
   border: solid 5px black;
-}
-
-.products {
-  background-color: #BADDC2;
-  margin: 1%;
-  height: 370px;
-  max-height: 370px;
-}
-
-.img-products {
-  height: 150px;
-  width: 225px;
-  margin-top: 10%;
-  border: 1px black solid;
-}
-
-.price {
-  border: solid 2px black;
-  width: 50%;
-}
-
-.price:hover {
-  cursor: pointer;
-  background-color: #F0F2BC;
-  transition-duration: 0.4s;
 }
 
 .carousel-inner {

@@ -1,10 +1,15 @@
-<div class="col-sm-2 col-ms-4 products">
-  <div class="prod_img"><%= link_to image_tag(product.image_url, class: "img-responsive img-products"), product %>
-    <h3><%= link_to product.name, product %></h3>
-    <p><%= product.description %></p>
-    <p>Colour: <%= product.colour %></p>
-    <a href="/orders"><strong><p class="price">Buy Now: <%= product.price %></p></strong></a>
-    <%= link_to 'Edit', edit_product_path(product) %>
-    <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+<div class="card" style="width: 17rem;">
+  <%= link_to image_tag(product.image_url, class: "card-img-top"), product %>
+  <div class="card-block">
+    <h3 class="card-title"><%= link_to product.name, product %></h3>
+    <p class="card-text"><%= product.description %></p>
   </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Colour: <%= product.colour %></li>
+  </ul>
+  <div class="card-block">
+    <a href="/orders" style="text-decoration: none;"><strong><p class="card-link btn-outline">Buy Now: $<%= product.price %>.00</p></strong></a>
+  </div>
+  <%= link_to 'Edit', edit_product_path(product) %>
+  <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
 </div>
