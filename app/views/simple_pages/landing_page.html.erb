@@ -2,12 +2,12 @@
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
-    <% @products.each do |product, i| %>
+    <% @products.each_with_index do |product, i| %>
     <li data-target="#carouselExampleIndicators" data-slide-to=#{i) class="#{'active' if i == 0}"></li>
     <% end %>
   </ol>
   <div class="carousel-inner" role="listbox">
-    <% @products.each do |product, i| %>
+    <% @products.each_with_index do |product| %>
     <div class="carousel-item<%= " active " if product == @products.first %>">
       <%= image_tag(product.image_url) %>
       <div class="carousel-caption">
