@@ -21,7 +21,7 @@ a{
 }
 
 .mr-auto {
-  margin-left: auto;
+  margin: auto;
 }
 
 .page-wrap {
@@ -51,9 +51,10 @@ h1 {
 }
 
 .card {
-  display: flex;
-  justify-content: center;
-  margin: 1%;
+  display: inline-block;
+  margin: auto;
+  margin-top: 5%;
+  width: 50%;
 }
 
 .btn-outline:hover {
@@ -79,4 +80,9 @@ h1 {
 .carousel-inner {
   width: auto;
   font-size: 3em;
+}
+
+.form-group {
+  max-width: 500px;
+  margin: auto;
 }
