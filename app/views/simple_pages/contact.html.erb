@@ -1,21 +1,22 @@
 <h1>Contact Us</h1>
-
+<h5>If you have any questions or concerns, please feel free to voice them in the contact form below.</h5>
+<br>
 <%= flash[:notice] %>
 
 <%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
 <div>
   <div class="form-group">
-    <%= form.label :name %>
     <%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %>
   </div>
+  <br>
   <div class="form-group">
-    <%= form.label :email %>
     <%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %>
   </div>
+  <br>
   <div class="form-group">
-    <%= form.label :message %>
     <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5 %>
   </div>
+  <br>
 </div>
 <%= form.submit "Send", class: "form_label btn btn-outline-success my-2 my-sm-2" %>
 <% end %>
