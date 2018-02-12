@@ -64,8 +64,15 @@
     </div>
   </nav>
   <div class="page-wrap" align="center">
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+
+    <% if notice %>
+      <p id="notice" class="alert alert-success" role="alert"><%= notice %></p>
+    <% end %>
+
+    <% if alert %>
+      <p class="alert alert-danger" role="alert"><%= alert %></p>
+    <% end %>
+
     <%= yield %>
   </div>
   <footer class="site-footer">

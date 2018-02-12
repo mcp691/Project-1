@@ -63,3 +63,5 @@ end
 gem 'devise'
 
 gem 'bootstrap', '~> 4.0.0'
+
+gem 'cancancan', '~> 1.10'

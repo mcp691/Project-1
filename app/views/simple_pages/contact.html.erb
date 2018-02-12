@@ -1,7 +1,9 @@
 <h1>Contact Us</h1>
 <h5>If you have any questions or concerns, please feel free to voice them in the contact form below.</h5>
 <br>
-<%= flash[:notice] %>
+<% if notice %>
+  <%= flash[:notice] %>
+<% end %>
 
 <%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
 <div>
