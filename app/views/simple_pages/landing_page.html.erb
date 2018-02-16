@@ -9,7 +9,7 @@
   <div class="carousel-inner" role="listbox">
     <% @products.each_with_index do |product| %>
     <div class="carousel-item<%= " active " if product == @products.first %>">
-      <%= image_tag(product.image_url) %>
+      <%= image_tag(product.image_url, class: "img-fluid") %>
       <div class="carousel-caption">
         <%= product.name %><br><br>
         $<%= product.price %>.00
