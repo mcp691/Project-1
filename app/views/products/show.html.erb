@@ -1,5 +1,6 @@
 <h1>
   <strong><%= @product.name %></strong>
+  <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
 </h1>
 <div class="product-view">
 
@@ -30,12 +31,8 @@
 </div>
 <br>
 <hr>
-<div class="comments">
   <h3>
     <strong>Ratings:</strong>
-    <br>
-    <%= @product.highest_rating_comment %>
-    <br>
-    <%= @product.lowest_rating_comment %>
   </h3>
-</div>
+  <%= render 'new_comment' %>
+  <%= render 'comments' %>
