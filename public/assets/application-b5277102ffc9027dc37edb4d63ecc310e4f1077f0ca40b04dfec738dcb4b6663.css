@@ -1,0 +1,305 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/raty.eot");
+  src: url("./fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("./fonts/raty.svg#raty") format("svg");
+  src: url("./fonts/raty.ttf") format("truetype");
+  src: url("./fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 1, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/scaffolds.scss */
+body {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 7, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 13, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 19, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 23, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 28, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 33, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/scaffolds.scss */
+.alert {
+  max-width: 500px;
+}
+
+/* line 37, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+  font-weight: bold;
+  width: auto;
+}
+
+/* line 43, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 49, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 56, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 66, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 72, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+@import url("https://fonts.googleapis.com/css?family=Acme");
+/* line 3, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/simple_pages.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Acme', sans-serif;
+}
+
+/* line 9, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/simple_pages.scss */
+html, body {
+  height: 100%;
+  background-color: #FCF3E8;
+}
+
+/* line 14, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/simple_pages.scss */
+a {
+  color: inherit;
+}
+
+/* line 18, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/simple_pages.scss */
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  font-size: 1.5em;
+}
+
+/* line 23, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/simple_pages.scss */
+.mr-auto {
+  margin: auto;
+}
+
+/* line 27, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/simple_pages.scss */
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin: 2% 10% 0 10%;
+  margin-bottom: -142px;
+}
+
+/* line 34, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/simple_pages.scss */
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+/*Sticky Footer*/
+/* line 40, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/simple_pages.scss */
+.site-footer, .page-wrap:after {
+  height: 142px;
+}
+
+/* line 44, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/simple_pages.scss */
+.site-footer {
+  background: #809B68;
+}
+
+/*end of Sticky Footer*/
+/* line 49, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/simple_pages.scss */
+h1 {
+  font-size: 3em;
+}
+
+/* line 53, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/simple_pages.scss */
+.card {
+  display: inline-block;
+  margin: auto;
+  margin-top: 5%;
+  width: 50%;
+}
+
+/* line 60, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/simple_pages.scss */
+.btn-outline:hover {
+  background-color: #7f9b69;
+  color: white;
+}
+
+/* line 65, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/simple_pages.scss */
+.card-title {
+  margin-top: 5%;
+}
+
+/* line 69, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/simple_pages.scss */
+.card-link {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  font-size: 1.5em;
+}
+
+/* line 76, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/simple_pages.scss */
+.carousel-inner {
+  width: auto;
+  font-size: 3em;
+}
+
+/* line 81, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/simple_pages.scss */
+.form-group {
+  max-width: 500px;
+  margin: auto;
+}
+
+/* line 87, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/simple_pages.scss */
+.product-view {
+  margin-top: 5%;
+}
+
+/* line 91, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/simple_pages.scss */
+.img-view {
+  max-width: 600px;
+  float: left;
+}
+
+/* line 99, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/simple_pages.scss */
+.paginate {
+  font-size: 1.5em;
+  word-spacing: normal;
+}
+
+/* line 103, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/simple_pages.scss */
+.apple_pagination {
+  background: #f0f0f0;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  padding: 1em;
+  margin-bottom: 2%;
+  cursor: default;
+}
+
+/* line 110, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/simple_pages.scss */
+.apple_pagination a, .apple_pagination span {
+  padding: 0.2em 0.3em;
+}
+
+/* line 112, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/simple_pages.scss */
+.apple_pagination .disabled {
+  color: #aaaaaa;
+}
+
+/* line 114, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/simple_pages.scss */
+.apple_pagination .current {
+  font-style: normal;
+  font-weight: bold;
+  background-color: #bebebe;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.5;
+  border-radius: 1em;
+  text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px;
+}
+
+/* line 126, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/simple_pages.scss */
+.apple_pagination a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 129, /home/matthew/Desktop/WebDev/Project1/app/assets/stylesheets/simple_pages.scss */
+.apple_pagination a:hover, .apple_pagination a:focus {
+  text-decoration: underline;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
