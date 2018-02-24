@@ -92,6 +92,23 @@ h1 {
   max-width: 600px;
   float:left;
 }
+
+// comments
+.product-reviews {
+  background: #f8f9fa;
+  border: 1px #e5e5e5 solid;
+  margin-top: 2%;
+  max-width: 600px;
+}
+
+.comment_head {
+  display: flex;
+  justify-content: center;
+}
+
+.comment_body {
+  border: 1px #e5e5e5 solid;
+}
 // end Product View Screen
 
 
@@ -101,6 +118,7 @@ h1 {
   word-spacing: normal;
 }
 .apple_pagination {
+  max-width: 600px;
   background: #f0f0f0;
   border: 1px solid #e5e5e5;
   text-align: center;
