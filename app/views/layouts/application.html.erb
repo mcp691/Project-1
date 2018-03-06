@@ -26,19 +26,19 @@
             Products
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/simple_pages/landing_page">Featured</a>
+            <%= link_to('All Products', simple_pages_landing_page_path, class: "dropdown-item") %>
             <a class="dropdown-item" href="#">Newest</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="/products">All Products</a>
+            <%= link_to('All Products', products_path, class: "dropdown-item") %>
           </div>
           <li class="nav-item">
-            <a class="nav-link" href="/orders">Checkout</a>
+            <%= link_to('Checkout', orders_path, class: "nav-link") %>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/simple_pages/about">About</a>
+            <%= link_to('About', simple_pages_about_path, class: "nav-link") %>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/simple_pages/contact">Contact Us</a>
+            <%= link_to('Contact Us', simple_pages_contact_path, class: "nav-link") %>
           </li>
         </li>
       </ul>
