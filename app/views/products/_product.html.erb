@@ -7,9 +7,13 @@
   <ul class="list-group list-group-flush">
     <li class="list-group-item">Colour: <%= product.colour %></li>
   </ul>
-  <div class="card-block">
+  <br>
+  <%= form_with(url: '/payments/create') do |form| %>
+  <%= render partial: "shared/stripe_checkout_button" %>
+  <% end %>
+  <!-- <div class="card-block">
     <a href="/orders" style="text-decoration: none;"><strong><p class="card-link btn-outline">Buy Now: $<%= product.price %>.00</p></strong></a>
-  </div>
+  </div> -->
   <%= link_to 'Edit', edit_product_path(product) %>
   <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
 </div>
