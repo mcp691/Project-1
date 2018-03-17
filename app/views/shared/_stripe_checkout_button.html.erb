@@ -1,8 +1,12 @@
+<form action="/payments/create" method="POST">
+<%= hidden_field_tag(:product_id, "@product.id") %>
 <script
   src="https://checkout.stripe.com/checkout.js" class="stripe-button"
   data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-  data-image="/square-image.png"
-  data-name="Seeds"
-  data-description="A packet with 75g of seeds"
-  data-amount="300">
+  data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+  data-name="Stem and Seed"
+  data-description="Farm Supplier"
+  data-amount="300"
+  data-locale="auto">
 </script>
+</form>
