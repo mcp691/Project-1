@@ -9,7 +9,8 @@
   </ul>
   <br>
   <%= form_with(url: '/payments/create') do |form| %>
-  <%= render partial: "shared/stripe_checkout_button" %>
+    <%= hidden_field_tag(:product_id, product.id) %>
+    <%= render partial: "shared/stripe_checkout_button" %>
   <% end %>
   <!-- <div class="card-block">
     <a href="/orders" style="text-decoration: none;"><strong><p class="card-link btn-outline">Buy Now: $<%= product.price %>.00</p></strong></a>
