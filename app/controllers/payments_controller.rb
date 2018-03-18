@@ -12,7 +12,6 @@ class PaymentsController < ApplicationController
         currency: "usd",
         source: token,
         description: params[:stripeEmail]
-        receipt_email: 'test@test.com',
       )
 
       if charge.paid
