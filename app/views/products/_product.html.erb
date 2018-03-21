@@ -12,10 +12,13 @@
     <%= hidden_field_tag(:product_id, product.id) %>
     <%= render partial: "shared/stripe_checkout_button" %>
   <% end %>
+  <br />
   <!-- <div class="card-block">
     <a href="/orders" style="text-decoration: none;"><strong><p class="card-link btn-outline">Buy Now: $<%= product.price %>.00</p></strong></a>
   </div> -->
+  <% if signed_in? && current_user.admin? %>
   <%= link_to 'Edit', edit_product_path(product) %>
   <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
   <% logger.debug "Product: #{product.name}"%>
+  <% end %>
 </div>
