@@ -6,7 +6,9 @@
 
   <div class="img-view">
     <figure class="figure">
-      <%= link_to image_tag(@product.image_url, class: "figure-img img-fluid rounded"), @product %>
+      <%= if (@product.image_url != nil)
+        image_tag(@product.image_url, class: "figure-img img-fluid rounded img-zoom", data_zoom_images: @product.image_url)
+      end %>
     </figure>
   </div>
   <h3>
